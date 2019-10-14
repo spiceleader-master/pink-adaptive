@@ -160,6 +160,66 @@
       </div>
     </section>
 
+    <section class="photo-editor">
+      <header class="photo-editor__header">
+        <h2 class="visually-hidden">Добавить новую фотографию</h2>
+        <p class="photo-editor__title">Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!</p>
+      </header>
+
+      <div class="photo-editor__form-wrapper">
+        <form class="form-photo" action="https://echo.htmlacademy.ru" method="post">
+          <input class="visually-hidden" type="file" name="image" id="image">
+          <label class="form-photo__image" for="image" aria-label="Выберите фото"></label>
+
+          <div class="form-photo__controls">
+            <div class="form-photo__filters" id="photo-filters">
+              <div class="form-photo__filters-buttons">
+                <button class="form-photo__filter-button form-photo__filter-button--current" type="button"
+                  aria-label="Обрезка фото">
+                  <svg class="form-photo__icon"></svg>
+                </button>
+                <button class="form-photo__filter-button" type="button" aria-label="Заливка фото">
+                  <svg class="form-photo__icon"></svg>
+                </button>
+                <button class="form-photo__filter-button" type="button" aria-label="Контрастность фото">
+                  <svg class="form-photo__icon"></svg>
+                </button>
+              </div>
+              <div class="form-photo__filter form-photo__filter--current">
+                <div class="form-photo__icon-wrapper">
+                  <svg class="form-photo__icon form-photo__icon--crop"></svg>
+                </div>
+                <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="85">
+              </div>
+
+              <div class="form-photo__filter">
+                <div class="form-photo__icon-wrapper">
+                  <svg class="form-photo__icon form-photo__icon--fill"></svg>
+                </div>
+                <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="15">
+              </div>
+
+              <div class="form-photo__filter">
+                <div class="form-photo__icon-wrapper">
+                  <svg class="form-photo__icon form-photo__icon--contrast"></svg>
+                </div>
+                <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast" value="50">
+              </div>
+
+            </div>
+
+            <div class="form-photo__buttons">
+              <button class="form-photo__button button button--submit" type="submit">Запостить</button>
+              <button class="form-photo__button button button--reset" type="reset">Отмена</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </section>
+
   </main>
 
   <footer class="page-footer" id="page-footer">
