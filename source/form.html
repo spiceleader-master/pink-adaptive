@@ -30,7 +30,133 @@
 
   <main class="page-inner" id="page-inner">
 
+    <section class="contest-form" id="contest-form">
+      <header class="contest-form__header">
+        <h2 class="visually-hidden">Форма для участия в конкурсе от приложения «Пинк»</h2>
+        <p class="contest-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+          вашу бонусную карту! <span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span></p>
+      </header>
 
+      <form action="https://htmlacademy.ru" class="contest-form__feedback feedback" method="post">
+        <div class="feedback__name-wrapper">
+          <fieldset class="feedback__fieldset feedback__fieldset--name">
+            <ul class="feedback__list">
+              <li class="feedback__name-item">
+                <label class="feedback__label" for="lastname">Фамилия:</label>
+                <input class="feedback__input" type="text" name="lastname" placeholder="Укажите фамилию *" id="lastname"
+                  required>
+              </li>
+              <li class="feedback__name-item">
+                <label class="feedback__label" for="firstname">Имя:</label>
+                <input class="feedback__input" type="text" name="firstname" placeholder="Введите ваше имя *"
+                  id="firstname" required>
+              </li>
+              <li class="feedback__name-item">
+                <label class="feedback__label" for="middlename">Отчество:</label>
+                <input class="feedback__input" type="text" name="middletname" placeholder="Ну и отчество тоже"
+                  id="middlename">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="feedback__achievements-wrapper">
+          <fieldset class="feedback__fieldset feedset__fieldset--achievements">
+            <legend class="feedback__legend feedback__legend--achievements">
+              <span class="feedback__legend-text">Ваши безбашенные достижения в путешествии</span>
+            </legend>
+            <ul class="feedback__list feedback__list--row">
+              <li class="feedback__achievements-item">
+                <input class="feedback__checkbox visually-hidden" type="checkbox" id="shark" name="achievements"
+                  value="shark" checked>
+                <label class="feedback__label-checkbox" for="shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="feedback__achievements-item">
+                <input class="feedback__checkbox visually-hidden" type="checkbox" id="beach" name="achievements"
+                  value="beach" checked>
+                <label class="feedback__label-checkbox" for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="feedback__achievements-item">
+                <input class="feedback__checkbox visually-hidden" type="checkbox" id="norris" name="achievements"
+                  value="norris">
+                <label class="feedback__label-checkbox" for="norris">Видел Чака Норриса</label>
+              </li>
+              <li class="feedback__achievements-item">
+                <input class="feedback__checkbox visually-hidden" type="checkbox" id="souvenirs" name="achievements"
+                  value="souvenirs">
+                <label class="feedback__label-checkbox" for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="feedback__achievements-item">
+                <input class="feedback__checkbox visually-hidden" type="checkbox" id="tower" name="achievements"
+                  value="tower" checked>
+                <label class="feedback__label-checkbox" for="tower">Удержал башню</label>
+              </li>
+              <li class="feedback__achievements-item">
+                <input class="feedback__checkbox visually-hidden" type="checkbox" id="hotel" name="achievements"
+                  value="hotel">
+                <label class="feedback__label-checkbox" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="feedback__contacts-wrapper">
+          <fieldset class="feedback__fieldset feedback__fieldset--contacts">
+            <legend class="feedback__legend feedback__legend--contacts">
+              <span class="feedback__legend-text">Контактная информация</span>
+            </legend>
+            <ul class="feedback__list feedback__list--row">
+              <li class="feedback__name-item feedback__name-item--contacts feedback__name-item--phone">
+                <label class="feedback__label feedback__label--contacts" for="phone">Номер телефона</label>
+                <input class="feedback__input feedback__input--contacts" type="tel" id="phone" name="phone"
+                  placeholder="Номер, пожалуйста">
+              </li>
+              <li class="feedback__name-item feedback__name-item--contacts feedback__name-item--phone">
+                <label class="feedback__label feedback__label--contacts" for="email">Адрес почты</label>
+                <input class="feedback__input feedback__input--contacts" type="email" id="email" name="email"
+                  placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="feedback__device-wrapper">
+          <fieldset class="feedback__fieldset feedback__fieldset--device">
+            <legend class="feedback__legend">
+              <span class="feedback__legend-text">С каким приложением путешествовали?</span>
+            </legend>
+            <ul class="feedback__list">
+              <li class="feedback__device-item">
+                <input class="feedback__radio visually-hidden" type="radio" id="ios" name="device" value="1" checked>
+                <label class="feedback__label-radio" for="ios">Pink для iOS</label>
+              </li>
+              <li class="feedback__device-item">
+                <input class="feedback__radio visually-hidden" type="radio" id="android" name="device" value="2">
+                <label class="feedback__label-radio" for="android">Pink для Android</label>
+              </li>
+              <li class="feedback__device-item">
+                <input class="feedback__radio visually-hidden" type="radio" id="windows" name="device" value="3">
+                <label class="feedback__label-radio" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="feedback__emotions-wrapper">
+          <fieldset class="feedback__fieldset feedback__fieldset--emotions">
+            <legend class="feedback__legend feedback__legend-emotions">
+              <span class="feedback__legend-text">Опишите свои эмоции</span>
+            </legend>
+            <textarea class="feedback__input feedback__textarea" name="message"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </div>
+        <div class="feedback__submit-wrapper">
+          <button class="feedback__button button" type="submit">Отправить форму</button>
+          <p class="feedback__required-text">
+            <span class="feedback-astrisk">*</span>&thinsp;— обязательные<span
+              class="feedback__required-text--hidden">&thinsp;для
+              заполнения</span>&thinsp;поля
+          </p>
+        </div>
+      </form>
+    </section>
 
   </main>
 
